@@ -1,0 +1,172 @@
+/* General styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Backgrounds for specific pages */
+body#activities {
+    background: url('images/cliff_ocean.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body#contact {
+    background: url('images/cliff_rock.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4977D1;
+}
+
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li.active a {
+    text-decoration: underline;
+}
+
+/* Partner logos */
+ul.partners {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+ul.partners li img {
+    width: 100px;
+    height: auto;
+}
+
+ul.partners li:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Table styling */
+table.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+table.styled-table caption {
+    background-color: #9ed034;
+    padding: 10px;
+    font-weight: bold;
+}
+
+table.styled-table th, table.styled-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table.styled-table th {
+    background-color: #4977D1;
+    color: white;
+}
+
+table.styled-table td:first-child {
+    font-weight: bold;
+    text-align: center;
+    color: #4977D1;
+}
+
+/* Form styling */
+form.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form.styled-form input, form.styled-form textarea, form.styled-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form.styled-form button {
+    background-color: #4977D1;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form.styled-form button:hover {
+    background-color: #355bb5;
+}
+
+form.styled-form input:focus, form.styled-form textarea:focus {
+    outline: none;
+    border-color: #9ed034;
+    box-shadow: 0 0 5px #9ed034;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4977D1;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    ul.partners {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    form.styled-form {
+        width: 100%;
+        padding: 10px;
+    }
+}
